@@ -4,6 +4,7 @@
 %bcond_without	python3 # CPython 3.x module
 
 Summary:	Sphinx extension imagesvg
+Summary(pl.UTF-8):	Rozszerzenie Sphinksa imagesvg
 Name:		python-sphinxcontrib-imagesvg
 Version:	0.1
 Release:	1
@@ -32,19 +33,30 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package contains the imagesvg Sphinx extension. The extension
-defines a directive, "imagesvg", for embedding an svg image in a
+defines a directive, "imagesvg", for embedding an SVG image in a
 specified HTML tag.
+
+%description -l pl.UTF-8
+Ten pakiet zawiera rozszerzenie Sphinksa imagesvg. Definiuje ono
+dyrektywę "imagesvg" do osadzania obrazów SVG w podanym znaczniku
+HTML.
 
 %package -n python3-sphinxcontrib-imagesvg
 Summary:	Sphinx extension imagesvg
+Summary(pl.UTF-8):	Rozszerzenie Sphinksa imagesvg
 Group:		Libraries/Python
 Requires:	python3-modules
 Requires:	python3-sphinxcontrib
 
 %description -n python3-sphinxcontrib-imagesvg
 This package contains the imagesvg Sphinx extension. The extension
-defines a directive, "imagesvg", for embedding an svg image in a
+defines a directive, "imagesvg", for embedding an SVG image in a
 specified HTML tag.
+
+%description -n python3-sphinxcontrib-imagesvg -l pl.UTF-8
+Ten pakiet zawiera rozszerzenie Sphinksa imagesvg. Definiuje ono
+dyrektywę "imagesvg" do osadzania obrazów SVG w podanym znaczniku
+HTML.
 
 %prep
 %setup -q -n sphinxcontrib-imagesvg-%{version}
