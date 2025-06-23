@@ -89,7 +89,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with python2}
 %files
 %defattr(644,root,root,755)
-%doc LICENSE README.rst
+%doc AUTHORS LICENSE README.rst
 %{py_sitescriptdir}/sphinxcontrib/imagesvg.py[co]
 %{py_sitescriptdir}/sphinxcontrib_imagesvg-%{version}-py*.egg-info
 %{py_sitescriptdir}/sphinxcontrib_imagesvg-%{version}-py*-nspkg.pth
@@ -98,7 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with python3}
 %files -n python3-sphinxcontrib-imagesvg
 %defattr(644,root,root,755)
-%doc LICENSE README.rst
+%doc AUTHORS LICENSE README.rst
 %{py3_sitescriptdir}/sphinxcontrib/imagesvg.py
 %{py3_sitescriptdir}/sphinxcontrib/__pycache__/imagesvg.cpython-*.py[co]
 %{py3_sitescriptdir}/sphinxcontrib_imagesvg-%{version}-py*.egg-info
